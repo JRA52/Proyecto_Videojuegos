@@ -24,7 +24,7 @@ class Player(GameEntity):
             y,
             16,
             20,
-            "martian",
+            "boy",
             game_level,
             states={
                 "idle": lambda sm: player_states.IdleState(self, sm),
@@ -34,8 +34,8 @@ class Player(GameEntity):
                 "dead": lambda sm: player_states.DeadState(self, sm),
             },
             animation_defs={
-                "idle": {"frames": [0]},
-                "walk": {"frames": [9, 10], "interval": 0.15},
+                "idle": {"frames": [11]},
+                "walk": {"frames": [8, 9, 10, 11], "interval": 0.15},
                 "jump": {"frames": [2]},
             },
         )

@@ -13,7 +13,6 @@ from gale.input_handler import InputData
 import settings
 from src.states.entities.BaseEntityState import BaseEntityState
 
-
 class JumpState(BaseEntityState):
     def enter(self) -> None:
         self.entity.change_animation("jump")

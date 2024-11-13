@@ -29,6 +29,8 @@ input_handler.InputHandler.set_keyboard_action(input_handler.KEY_LEFT, "move_lef
 input_handler.InputHandler.set_keyboard_action(input_handler.KEY_a, "move_left")
 input_handler.InputHandler.set_keyboard_action(input_handler.KEY_SPACE, "jump")
 input_handler.InputHandler.set_mouse_click_action(input_handler.MOUSE_BUTTON_1, "jump")
+input_handler.InputHandler.set_keyboard_action(input_handler.KEY_UP, "move_up")
+input_handler.InputHandler.set_keyboard_action(input_handler.KEY_DOWN, "move_down")
 
 # Size we want to emulate
 VIRTUAL_WIDTH = 400
@@ -50,14 +52,14 @@ LevelLoader = loaders.TmxLevelLoader
 
 TEXTURES = {
     "tiles": pygame.image.load(BASE_DIR / "assets" / "textures" / "tileset.png"),
-    "martian": pygame.image.load(BASE_DIR / "assets" / "textures" / "martian.png"),
+    "boy": pygame.image.load(BASE_DIR / "assets" / "textures" / "boyWalk.png"),
     "creatures": pygame.image.load(BASE_DIR / "assets" / "textures" / "creatures.png"),
     "key-gold": pygame.image.load(BASE_DIR / "assets" / "textures" / "key-gold.png"),
 }
 
 FRAMES = {
     "tiles": frames.generate_frames(TEXTURES["tiles"], 16, 16),
-    "martian": frames.generate_frames(TEXTURES["martian"], 16, 20),
+    "boy": frames.generate_frames(TEXTURES["boy"], 32, 32),
     "creatures": frames.generate_frames(TEXTURES["creatures"], 16, 16),
     "key-gold": frames.generate_frames(TEXTURES["key-gold"], 16, 16),
 }
