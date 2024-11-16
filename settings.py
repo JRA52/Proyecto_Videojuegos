@@ -58,7 +58,7 @@ TEXTURES = {
 }
 
 FRAMES = {
-    "tiles": frames.generate_frames(TEXTURES["tiles"], 16, 16),
+    "tiles": frames.generate_frames(TEXTURES["tiles"], 32, 32),
     "boy": frames.generate_frames(TEXTURES["boy"], 32, 32),
     "creatures": frames.generate_frames(TEXTURES["creatures"], 16, 16),
     "key-gold": frames.generate_frames(TEXTURES["key-gold"], 16, 16),
